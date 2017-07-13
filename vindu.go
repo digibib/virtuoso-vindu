@@ -32,6 +32,7 @@ var repl = strings.NewReplacer(
 	"http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "a",
 	"http://data.deichman.no/raw#", "raw:",
 	"http://migration.deichman.no/", "migration:",
+	"http://data.deichman.no/duo#", "duo:",
 )
 
 var rgxpLinkify = regexp.MustCompile(`http://data.deichman.no/(place|publication|work|person|corporation|subject|genre|serial)/`)
