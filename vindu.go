@@ -34,7 +34,7 @@ var repl = strings.NewReplacer(
 	"http://migration.deichman.no/", "migration:",
 )
 
-var rgxpLinkify = regexp.MustCompile(`http://data.deichman.no/(place|publication|work|person|corporation|subject)/`)
+var rgxpLinkify = regexp.MustCompile(`http://data.deichman.no/(place|publication|work|person|corporation|subject|genre|serial)/`)
 
 type server struct {
 	graph  string
