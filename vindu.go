@@ -90,6 +90,11 @@ func (srv server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		trs = append(trs, tr)
 	}
 
+	if len(trs) == 0 {
+		http.NotFound(w, r)
+		return
+	}
+
 	sort.Slice(trs, func(i, j int) bool {
 		// Sort by subject, then by predicate
 		switch strings.Compare(trs[i].Subject.String(), trs[j].Subject.String()) {
