@@ -54,7 +54,7 @@ func (srv server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if accept == "text/html" {
 		accept = "text/plain"
 	}
-	log.Println(r.Referer(), r.URL.Path)
+	log.Println(r.Header["X-Forwarded-For"], r.URL.Path)
 	params := url.Values{}
 	params.Set("query", fmt.Sprintf(descQuery, srv.base, r.URL.Path))
 	params.Set("default-graph-uri", srv.graph)
