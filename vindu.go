@@ -18,7 +18,7 @@ import (
 
 const (
 	descQuery  = `DEFINE sql:describe-mode "CBD" DESCRIBE <%s%s>`
-	htmlHeader = `<html><head><title>%s</title></head><body><pre>@base              &lt;http://data.deichman.no.no/&gt .
+	htmlHeader = `<html><head><title>%s</title></head><body><pre>@base              &lt;http://data.deichman.no/&gt .
 @prefix     deich: &lt;http://data.deichman.no/ontology#&gt; .
 @prefix       raw: &lt;http://data.deichman.no/raw#&gt; .
 @prefix migration: &lt;http://migration.deichman.no/&gt; .
