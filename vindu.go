@@ -22,6 +22,7 @@ const (
 @prefix     deich: &lt;http://data.deichman.no/ontology#&gt; .
 @prefix       raw: &lt;http://data.deichman.no/raw#&gt; .
 @prefix migration: &lt;http://migration.deichman.no/&gt; .
+@prefix       duo: &lt;http://data.deichman.no/utility#&gt; .
 
 `
 	htmlFooter = `</pre></body></html>`
